@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Whiteboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toolbar">
+        <button id="pencilBtn">Pencil</button>
+        <button id="eraserBtn">Eraser</button>
+        <button id="rectangleBtn">Rectangle</button>
+        <button id="circleBtn">Circle</button>
+        <button id="triangleBtn">Triangle</button>
+        <button id="lineBtn">Line</button>
+        <button id="textBtn">Text</button>
+        <input type="color" id="colorPicker" value="#000000">
+        <input type="range" id="lineWidth" min="1" max="20" value="2">
+        <button id="saveBtn">Save</button>
+        <button id="exportImageBtn">Export Image</button>
+        <button id="exportPDFBtn">Export PDF</button>
+        <button id="clearBtn">Clear</button>
+        <button id="undoBtn">Undo</button>
+        <button id="redoBtn">Redo</button>
+    </div>
+    <canvas id="whiteboard"></canvas>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    
+    <!-- PDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
